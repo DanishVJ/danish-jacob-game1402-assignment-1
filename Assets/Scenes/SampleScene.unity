@@ -550,10 +550,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Collectible
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2343420668844510755, guid: 587e43ba7288bd7499c3e05a9a121c9f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8676203423291701016, guid: 587e43ba7288bd7499c3e05a9a121c9f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1378040088}
   m_SourcePrefab: {fileID: 100100000, guid: 587e43ba7288bd7499c3e05a9a121c9f, type: 3}
 --- !u!1 &626675373
 GameObject:
@@ -1103,6 +1107,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1378040083 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8676203423291701016, guid: 587e43ba7288bd7499c3e05a9a121c9f, type: 3}
+  m_PrefabInstance: {fileID: 619737810}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1378040088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378040083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 018689bbd3400f3498ddef935fc9d8cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Collectible
+  value: 1
 --- !u!1 &1409943695
 GameObject:
   m_ObjectHideFlags: 0
@@ -1222,8 +1244,8 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
-  startPointOffset: {x: 0, y: -0.43}
-  groundCheckDistance: 0.96
+  startPointOffset: {x: 0, y: 0}
+  groundCheckDistance: 2
 --- !u!212 &1437898614
 SpriteRenderer:
   m_ObjectHideFlags: 0
