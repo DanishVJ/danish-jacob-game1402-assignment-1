@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 1051222989038545856}
   - component: {fileID: -3949788889935492004}
   - component: {fileID: 2343420668844510755}
+  - component: {fileID: 6613206064810303353}
   m_Layer: 0
   m_Name: Collectible
-  m_TagString: Untagged
+  m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149,9 +150,21 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8676203423291701016}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 018689bbd3400f3498ddef935fc9d8cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Collectible
   value: 1
+--- !u!114 &6613206064810303353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8676203423291701016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1aa9a751713f43479b1cd5ba8b61a4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Coin
