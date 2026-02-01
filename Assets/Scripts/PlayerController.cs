@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
     private bool _isOnGround;
 
     // Tracks total number of collectibles collected
-    private int _collected = 0;
+  //  private int _collected = 0;
 
     // Awake is called once when the script is loaded
     void Awake()
@@ -121,10 +121,10 @@ public class PlayerController : MonoBehaviour
         Debug.DrawLine((Vector2)transform.position + startPointOffset, (Vector2)transform.position + startPointOffset + Vector2.down * groundCheckDistance, _isOnGround ? Color.green : Color.red);
     }
 
-    public void AddCollectible(int amount)
-    {
-        _collected += amount; // increase the counter
+    //public void AddCollectible(int amount)
+   // {
+   //     _collected += amount; // increase the counter
 
-        Debug.Log(amount + " collected! Total: " + _collected);
-    }
+  //      Debug.Log(amount + " collected! Total: " + _collected);
+   // }
 }

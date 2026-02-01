@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MovingPlatform : MonoBehaviour
 {
-    float _currentTime = 0f;
+    float _currentTime;
 
     float _speed = 1f;
 
@@ -12,13 +12,7 @@ public class MovingPlatform : MonoBehaviour
     
     [SerializeField] private Transform pointB;
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+   // Update is called once per frame
     void Update()
     {
         _currentTime += _speed * Time.deltaTime;

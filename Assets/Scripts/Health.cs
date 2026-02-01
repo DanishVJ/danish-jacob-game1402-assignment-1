@@ -2,9 +2,13 @@ using UnityEngine;
 
 public class Health : MonoBehaviour, ICollectible
 {
-    public void OnCollect()
+    private int _amount = 1;
+    public int GetAmount() => _amount;
+
+    public string GetCollectibleName() => "Health";
+
+    public void Collect()
     {
-        Debug.Log("Health collected");
         Destroy(gameObject);
     }
 }

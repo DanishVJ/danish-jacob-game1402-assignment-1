@@ -7,17 +7,17 @@ public class Collectible : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         // Only react if the player collides
-        if (other.CompareTag("Player"))
+     //   if (other.CompareTag("Player"))
         {
             // Increase player's collectible count
-            PlayerController player = other.GetComponent<PlayerController>();
-            if (player != null)
+           // PlayerController player = other.GetComponent<PlayerController>();
+           // if (player != null)
             {
-                player.AddCollectible(value);
+           //     player.AddCollectible(value);
             }
 
             // Remove the collectible from the scene
-            Destroy(gameObject);
+          //  Destroy(gameObject);
         }
     }
 }

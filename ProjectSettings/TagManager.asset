@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - Collectible
   - Health
+  - Coin
   layers:
   - Default
   - TransparentFX

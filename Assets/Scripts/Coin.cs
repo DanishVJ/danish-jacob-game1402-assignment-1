@@ -2,9 +2,11 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour, ICollectible
 {
-    public void OnCollect()
+    private int _amount = 1;
+    public int GetAmount() => _amount;
+
+    public void Collect()
     {
-        Debug.Log("Coin collected");
         Destroy(gameObject);
     }
 }

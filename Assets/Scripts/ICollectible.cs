@@ -1,6 +1,5 @@
-
-
 public interface ICollectible
 {
-    public void OnCollect();
+    public int GetAmount();
+    public void Collect();
 }
