@@ -36,9 +36,6 @@ public class InputManager : MonoBehaviour
         // Subscribe to the Jump action's "performed" event
         // When Jump is pressed, OnJumpPressed will be called
         _playerInputActions.Player.Jump.performed += OnJumpPressed;
-
-        // This was commented out because movement is handled differently
-        //_playerInputActions.Player.Horizontal.performed += OnMovement;
     }
 
     // Called every time this GameObject becomes disabled
@@ -47,9 +44,6 @@ public class InputManager : MonoBehaviour
         // Unsubscribe from the Jump event
         // This prevents memory leaks and duplicate calls
         _playerInputActions.Player.Jump.performed -= OnJumpPressed;
-
-        // Also commented out for the same reason as above
-        //_playerInputActions.Player.Horizontal.performed -= OnMovement;
     }
 
     // This method is called when the Jump input action is performed
@@ -63,9 +57,6 @@ public class InputManager : MonoBehaviour
     // Handles movement input
     void OnMovement()
     {
-        // Read the float value from the Horizontal input action
-        // Example values: -1 (left), 0 (idle), 1 (right)
-
         // Invoke the movement event and pass the input value
         OnMove?.Invoke(_playerInputActions.Player.Horizontal.ReadValue<float>());
     }
@@ -73,8 +64,7 @@ public class InputManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Continuously read movement input every frame
-        // This ensures smooth movement while a key is held down
+        // Continuously read movement input every frame to ensure smooth movement while a key is held down
         OnMovement();
     }
 }

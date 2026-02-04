@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class MovingPlatform : MonoBehaviour
 {
-    float _currentTime;
+    private float _currentTime;
 
-    float _speed = 1f;
+    private float _speed = 1f;
 
     [SerializeField] private int cycleTime = 5;
 
