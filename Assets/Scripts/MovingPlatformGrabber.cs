@@ -4,7 +4,6 @@ public class MovingPlatformGrabber : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D other)
     {
-        //other.gameObject.tag == "Player"
         if (other.gameObject.CompareTag("Player"))
         {
             other.transform.SetParent(transform);

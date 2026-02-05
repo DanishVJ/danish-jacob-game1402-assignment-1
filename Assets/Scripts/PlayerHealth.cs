@@ -6,10 +6,9 @@ public class PlayerHealth : MonoBehaviour
     
     [SerializeField] private float fallDeathY = -10f;
     
-    [SerializeField] private int health = 3;  // Non-static health variable for each player instance
+    public int playerHealthAmount;
     
     [SerializeField] private ParticleSystem damageEffect;
-    // Method to take damage
     
     private void Update()
     {
@@ -17,11 +16,11 @@ public class PlayerHealth : MonoBehaviour
     }
     public void TakeDamage(int damage)
     {
-        health -= damage;  // Decrease health by the damage amount
-        Debug.Log("You are hit! Total health = " + health);
+        playerHealthAmount -= damage;  // Decrease health by the damage amount
+        Debug.Log("You are hit! Total health = " + playerHealthAmount);
         damageEffect.Play();
 
-        if (health <= 0)
+        if (playerHealthAmount <= 0)
         {
             Die();
         }

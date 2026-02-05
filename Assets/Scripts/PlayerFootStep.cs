@@ -13,7 +13,4 @@ public class PlayerFootStep : MonoBehaviour
             footStepEffect.Play();
         }
     }
-
-
-
 }

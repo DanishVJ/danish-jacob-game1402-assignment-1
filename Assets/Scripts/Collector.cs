@@ -18,8 +18,9 @@ public class Collector : MonoBehaviour
         }
         else if (other.CompareTag("Health"))
         {
-            _totalHealth += collectible.GetAmount();
-            Debug.Log(collectible.GetAmount() + " health collected! Total Health: " + _totalHealth);
+            PlayerHealth playerHealth = GetComponent<PlayerHealth>();
+            playerHealth.playerHealthAmount += collectible.GetAmount();
+            Debug.Log(collectible.GetAmount() + " health collected! Total Health: " + playerHealth.playerHealthAmount);
         }
 
         collectible.Collect();
